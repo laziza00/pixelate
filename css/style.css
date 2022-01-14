@@ -30,7 +30,7 @@ body {
 .latest-box{
   position: absolute;
   top: 25%;
-  left: 14%;
+  left: 16%;
   transform: translate();
   z-index: 10;
   text-transform: capitalize;
@@ -51,9 +51,7 @@ body {
   width: 670px;
   letter-spacing: 1px;
 }
-.collection{
-  padding: 0px;
-}
+
 .content{
   width: 100%;
   background-color: #fff;
