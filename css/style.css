@@ -52,7 +52,7 @@ body {
   letter-spacing: 1px;
 }
 .collection{
-  padding: 0 20px;
+  padding: 0px;
 }
 .content{
   width: 100%;
@@ -61,6 +61,7 @@ body {
   left: 0;
   grid-template-columns: repeat(3,380px);
   grid-template-rows: repeat(5,255px);
+  justify-content: center;
   grid-gap: 45px;
   padding: 50px 0px;
   grid-auto-flow: row;
