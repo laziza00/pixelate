@@ -51,14 +51,19 @@ body {
   width: 670px;
   letter-spacing: 1px;
 }
+.collection{
+  padding-top: 50px;
+  padding: 0 20px;
+}
 
 .content{
   width: 100%;
+  height: 1500px;
   background-color: #fff;
   display: grid;
   left: 0;
-  grid-template-columns: repeat(3,380px);
-  grid-template-rows: repeat(5,255px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5,1fr);
   justify-content: center;
   grid-gap: 45px;
   padding: 50px 0px;
@@ -71,6 +76,8 @@ body {
   display: block;
   background-image: url('../images/img1.jpeg');
   background-size: cover;
+  grid-row: 1/2;
+  grid-column: 1/2;
 }
 .content-item:nth-child(2){
   background-image: url('../images/img2.jpeg');
@@ -141,42 +148,44 @@ body {
   align-items: center;
   color: #fff;
   font-size: 20px;
+  margin-left: 10px;
 }
 
-/* .content-hover-box{
+.content-hover-box{
   width: 100%;
   height: 100%;
+  display:flex;
   background-color: rgba(0, 0, 0, 0.748);
-  opacity: 0;
   font-size: 10px;
   font-weight: 600;
   color: #fff;
-  align-items: center;
   text-align: center;
   justify-content: center;
   align-items: center;
-  transition: all 0.5s ease;
-} */
-/* .content-item{
+  display: none;
   transition: all 1s ease;
-  overflow: hidden;
-  z-index: 1;
-} */
-/* .content-item:hover .content-hover-box{
-  transition: all 0.5s ease;
-  opacity: 1;
-} */
+}
+.content-item{
+  transition: all 1s ease;
+}
+.content-item:hover .content-hover-box{
+  display: block;
+  background-color: #141414c0;
+  transition: all 1s ease;
+}
+
 .view-link:hover{
   transition: all 0.5s ease;
-  background-color: rgb(160, 153, 153);
+  background-color: #a09999;
   color: #715C41;
 }
 .commeric-text{
-  padding-top: 70px;
+  /* margin-top: 80px; */
   display: flex;
-  justify-content: center;
-  text-align: center;
   align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
   color: #c4bfbf;
   font-size: 18px;
   margin-bottom: 12px;
@@ -196,4 +205,8 @@ body {
   padding: 10px;
   font-size: 20px;
   color: #fff;
+}
+.btns{
+  transform: translateY(40px);
+  transition: all 1s ease;
 }
